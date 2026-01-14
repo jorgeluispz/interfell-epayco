@@ -10,47 +10,60 @@ La aplicación implementa un **CRUD completo** consumiendo la API pública de **
 
 - Next.js
 - React
-- Tailwind CSS
-- JSONPlaceholder API
 - TypeScript
+- Tailwind CSS
+- Axios
+- React Hook Form
+- Zod
+- JSONPlaceholder API
 
 ## Arquitectura
 
 El proyecto sigue el enfoque **Atomic Design**
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Configuración de Variables de Entorno
 
-## Getting Started
+El proyecto requiere un archivo `.env` en la raíz del proyecto. Este archivo **NO está incluido en el repositorio** por razones de seguridad (está en `.gitignore`).
 
-First, run the development server:
+Crea el archivo `.env` con el siguiente contenido:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```env
+NEXT_PUBLIC_API_BASE_URL=https://jsonplaceholder.typicode.com
+NEXT_PUBLIC_API_TIMEOUT=10000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> ⚠️ **Nota:** En un proyecto real, **NUNCA** se deben exponer las variables de entorno en la documentación pública. Se documentan aquí únicamente con fines de evaluación de esta prueba técnica, ya que se trata de una API pública sin credenciales sensibles.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Nota:** Las variables de entorno son obligatorias para que la aplicación funcione correctamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Ejecutar el Proyecto
 
-## Learn More
+```bash
+# Instalar dependencias
+yarn install
 
-To learn more about Next.js, take a look at the following resources:
+# Configurar el archivo .env.local (ver sección anterior)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Ejecutar en desarrollo
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-## Deploy on Vercel
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Scripts Disponibles
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `yarn dev` - Inicia el servidor de desarrollo
+- `yarn build` - Construye la aplicación para producción
+- `yarn start` - Inicia la aplicación en modo producción
+- `yarn lint` - Ejecuta ESLint
+
+## Deploy
+
+El proyecto está optimizado para desplegarse en [Vercel](https://vercel.com).
+
+## 🌐 Demo
+
+**[https://interfell-epayco.vercel.app](https://interfell-epayco.vercel.app)**
+```
