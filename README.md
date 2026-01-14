@@ -50,8 +50,6 @@ yarn dev
 
 Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-```
-
 ## Scripts Disponibles
 
 - `yarn dev` - Inicia el servidor de desarrollo
@@ -65,5 +63,4 @@ El proyecto está optimizado para desplegarse en [Vercel](https://vercel.com).
 
 ## 🌐 Demo
 
-**[https://interfell-epayco.vercel.app](https://interfell-epayco.vercel.app)**
-```
+[https://interfell-epayco.vercel.app](https://interfell-epayco.vercel.app)
