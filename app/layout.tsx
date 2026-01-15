@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Post Manager - Prueba Técnica",
   description: "Gestión de posts con Next.js, React Hook Form y Atomic Design",
   verification: {
-    google: "sWCG8yi0Udgsr5gUknaBwU8DHzYDWZ0xkP-QQjKBGug",
+    google: "K5p4iG5sQCCc2p5jt8yc9OrSCvh6zzrtlbPQWFqGUYg",
   },
 };
 
