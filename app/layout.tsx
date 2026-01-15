@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Post Manager - Prueba Técnica",
   description: "Gestión de posts con Next.js, React Hook Form y Atomic Design",
+  verification: {
+    google: "sWCG8yi0Udgsr5gUknaBwU8DHzYDWZ0xkP-QQjKBGug",
+  },
 };
 
 export default function RootLayout({
